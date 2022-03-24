@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <title>Pomodoro Clock</title>
+
+        <link rel="stylesheet" type="text/css" href="assets/css/styling.css">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya|Questrial" rel="stylesheet">
+
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="title">
+                <h1>POMODORO CLOCK</h1>
+            </div>
+
+            <div class="circle"> 
+                <svg width="300" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+                  <g transform="translate(110, 110)">
+                    <circle r="100" class="e-c-base"/>
+                    <g transform="rotate(-90)">
+                      <circle r="100" class="e-c-progress"/>
+                        <g id="e-pointer">
+                            <circle cx="100" cy="0" r="8" class="e-c-pointer"/>
+                        </g>
+                        </g>
+                    </g>
+                </svg> 
+            </div>
+
+            <div class="mainer">
+                <h2>SESSION</h2>
+                <div class="clock">
+                    <p>25:00</p>
+                </div>
+                <div class="start"><p>Start</p></div>
+                <div class="reset"><p>Reset</p></div>
+            </div>
+
+            <div class="extras">
+
+                <div class="break">
+                    <p>Break Length</p>
+                    <div class="config">
+                        <div class="minus bminus"><p>-</p></div>
+                        <div class="bnum"><p>2</p></div>
+                        <div class="plus bplus"><p>+</p></div>
+                    </div>
+                </div>
+
+                <div class="length">
+                    <p>Session Length</p>
+                    <div class="config">
+                        <div class="minus sminus"><p>-</p></div>
+                        <div class="snum"><p>5</p></div>
+                        <div class="plus splus"><p>+</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
